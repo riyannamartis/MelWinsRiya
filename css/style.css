@@ -247,6 +247,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter,
 #fh5co-event,
+#fh5co-rsvp,
 .fh5co-bg {
   background-size: cover;
   background-position: top center;
@@ -424,7 +425,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(161,0,53, 0.5);
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -439,10 +440,9 @@ h1, h2, h3, h4, h5, h6, figure {
     height: inherit;
   }
 }
-#fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
   border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   padding: 30px;
   width: 100%;
   float: left;
@@ -451,13 +451,14 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 4px;
   border-radius: 4px;
 }
+#fh5co-event .event-wrap:hover{
+  background: rgba(255, 255, 255, 0.3);
+}
 @media screen and (max-width: 768px) {
-  #fh5co-counter .event-wrap,
   #fh5co-event .event-wrap {
     margin-bottom: 10px;
   }
 }
-#fh5co-counter .event-wrap h3,
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
   color: #fff;
@@ -471,7 +472,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
@@ -2000,6 +2001,62 @@ form label {
   background: url(../images/loader.gif) center no-repeat #fff;
 }
 
+/* #fh5co-rsvp .overlay{
+  position: absolute;
+  background: rgba(161,0,53, 0.7);
+} */
+#fh5co-rsvp .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(161,0,53, 0.7);
+}
+#fh5co-rsvp .container{
+  padding: 10% 5%;
+  text-align: center;
+
+}
+#fh5co-rsvp .container h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #FFF1F1;
+    font-family: "Sacramento", Arial, serif;
+}
+#fh5co-rsvp .container span {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* #fh5co-rsvp .container .btn {
+    padding: 15px 20px;
+    background: #FFF1F1 !important;
+    color: #A10035;
+    border: none !important;
+    font-size: 25px;
+    text-transform: uppercase;
+} */
+#fh5co-rsvp .container .btn{
+  padding: 15px 20px;
+  margin-top: 3%;
+  background: #FFF1F1 !important;
+  color: #A10035;
+  border: none !important;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#fh5co-rsvp .container .btn:hover {
+  background: #FFDADA !important;
+  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+}
 .js .animate-box {
   opacity: 0;
   margin-bottom: 5%;
