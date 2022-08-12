@@ -247,7 +247,6 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter,
 #fh5co-event,
-#fh5co-rsvp,
 .fh5co-bg {
   background-size: cover;
   background-position: top center;
@@ -262,6 +261,13 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 
+.bg-rsvp{
+  background-position: center center;
+  width: 100%;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .fh5co-video {
   height: 450px;
   overflow: hidden;
@@ -1999,19 +2005,6 @@ form label {
   height: 100%;
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
-}
-
-/* #fh5co-rsvp .overlay{
-  position: absolute;
-  background: rgba(161,0,53, 0.7);
-} */
-#fh5co-rsvp .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(161,0,53, 0.7);
 }
 #fh5co-rsvp .container{
   padding: 10% 5%;
