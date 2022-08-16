@@ -265,7 +265,6 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   width: 100%;
   float: left;
-  background-size: cover;
   background-repeat: no-repeat;
 }
 .fh5co-video {
@@ -1176,6 +1175,7 @@ form label {
   right: 0;
   z-index: 99;
   animation: pulse 1s ease infinite;
+  margin-bottom: 20%;
 }
 .heart i {
   font-size: 20px;
@@ -1189,7 +1189,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .heart {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -1197,10 +1197,39 @@ form label {
   width: 50%;
   float: left;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .couple-half {
-    width: 100%;
+    width: 50%;
   }
+
+  .couple-half .desc-bride{
+    display: none;
+  }
+  .couple-half .desc-groom{
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* .desc-mob{
+    margin: 0% 0%;
+  } */
+.desc-mob h3{
+  text-align: center;
+  font-family: "Sacramento", Arial, serif;
+  color: #A10035;
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+.desc-mob p{
+  text-align: center;
+  padding: 0 10%;
+}
+}
+@media screen and (min-width: 992px) {
+.desc-mob h3, .desc-mob p{
+  display: none;
+}
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
@@ -1224,7 +1253,7 @@ form label {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
     width: 100%;
     height: 140px;
@@ -1234,7 +1263,7 @@ form label {
     height: 120px;
     margin: 0 auto;
   }
-}
+} */
 .couple-half .bride {
   float: right;
   margin-right: 5px;
@@ -1251,7 +1280,7 @@ form label {
   padding-left: 180px;
   text-align: left;
 }
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
     margin-left: 0;
     margin-right: 0;
@@ -1264,7 +1293,7 @@ form label {
     padding-left: 0;
     text-align: center;
   }
-}
+} */
 
 .feature-center {
   text-align: center;
